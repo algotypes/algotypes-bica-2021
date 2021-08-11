@@ -13,3 +13,13 @@ body {
   flex-grow: 1;
   background-color: bisque;
 }
+
+.image {
+  width: 50%;
+  padding-bottom: 50%;
+  margin: 0 auto;
+  background-image: url(https://www.biddytarot.com/wp-content/uploads/2018/06/ET-MA-01-Magician.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

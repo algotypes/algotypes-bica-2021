@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 33%;
+  padding-bottom: 25%;
+  border: 1px #000 solid;
+  margin: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x15_00.jpg);
+}
+
+.image.i00 {
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x14_00.jpg);
+}
+
+.image.i01 {
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x0E_01.jpg);
+}
+
+.image.i02 {
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x01_01.jpg);
+}
+
+.image.i03 {
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_visualizer_03.jpg);
+}
+
+.image.app {
+  padding-bottom: 33%;
+  position: relative;
+  overflow: hidden;
+  background-image: none;
+}

@@ -27,6 +27,10 @@ function getId() {
   return mStorage.getItem('algotypesId');
 }
 
+function intToHexString(i) {
+  return `0x${i.toString(16).padStart(2, '0').toUpperCase()}`;
+}
+
 window.onload = (event) => {
   const mApp = document.getElementById('my-app');
   const mStartButton = document.getElementById('my-start-button');
@@ -35,7 +39,7 @@ window.onload = (event) => {
 
   const mDailyRandom = dailyRandom(getId() + dayOfYear());
   const mCard = CARDS[Math.floor(CARDS.length * mDailyRandom)];
-  const mCardImageUrl = `imgs/cards/0x${mCard.number.toString(16)}.png`;
+  const mCardImageUrl = `imgs/cards/${intToHexString(mCard.number)}.png`;
 
   mStartButton.addEventListener('click', (event) => {
     setTimeout(() => mStartButton.style.opacity = 0, 0);

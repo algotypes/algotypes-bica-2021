@@ -64,6 +64,7 @@ window.onload = (event) => {
 
   const mDailyRandom = dailyRandom(getId() + dayOfYear());
   const mCard = CARDS[Math.floor(CARDS.length * mDailyRandom)];
+  console.log(mCard);
   const mCardImageUrl = `imgs/cards/${intToHexString(mCard.number)}.png`;
 
   mStartButton.style.transitionDuration = `${BUTTON_TRANSITION_DURATION / 1000}s`;
@@ -84,13 +85,13 @@ window.onload = (event) => {
     // fade intro text
     setTimeout(() => mIntroOverlay.style.opacity = 1, INTRO_OVERLAY_FADEIN);
     setTimeout(() => mIntro.style.backgroundImage = 'none', INTRO_REMOVE_IMAGE);
-    setTimeout(() => mIntroText.innerHTML = 'INTRO TEXT', INTRO_REMOVE_IMAGE);
+    setTimeout(() => mIntroText.innerHTML = mCard.algorithm.pt, INTRO_REMOVE_IMAGE);
     setTimeout(() => mIntroOverlay.style.opacity = 0, INTRO_OVERLAY_FADEOUT);
 
     // fade message text
     setTimeout(() => mMessageOverlay.style.opacity = 1, MESSAGE_OVERLAY_FADEIN);
     setTimeout(() => mMessage.style.backgroundImage = 'none', MESSAGE_REMOVE_IMAGE);
-    setTimeout(() => mMessageText.innerHTML = 'MESSAGE', MESSAGE_REMOVE_IMAGE);
+    setTimeout(() => mMessageText.innerHTML = mCard.message.pt, MESSAGE_REMOVE_IMAGE);
     setTimeout(() => mMessageOverlay.style.opacity = 0, MESSAGE_OVERLAY_FADEOUT);
   });
 };

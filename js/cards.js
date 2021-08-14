@@ -5,6 +5,10 @@ const CARDS = [
       en: 'Pseudo-Random Number Generator',
       pt: 'Gerador de Números Pseudoaleatórios'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Beginning of a journey. Every outcome is equally likely. But there is method to your madness.',
       pt:'Início de uma jornada. Cada possibilidade é igualmente provável. Mas existe um método para a sua loucura.'
@@ -16,9 +20,13 @@ const CARDS = [
       en: 'Fast Fourier Transform',
       pt: 'Transformação Rápida de Fourier'
     },
+    algorithm: {
+      en: '',
+      pt: 'A Transformação Rápida de Fourier é um algoritmo usado para navegar entre duas representações da mesma informação: uma que mostra quando certas coisas acontecem e outra que expressa com que frequência.'
+    },
     message: {
       en: 'Transformation between two realms. Creativity as material resource. Bring your own practical knowledge, tools and rituals.',
-      pt:'Transformação entre dois mundos. Criatividade como recurso material. Traga seus próprios conhecimentos práticos, ferramentas e rituais.'
+      pt:'De forma mais ampla, esta carta representa uma transformação entre dois universos. Use sua criatividade como um recurso material e crie suas próprias práticas, ferramentas e rituais.'
     }
   },
   {
@@ -27,9 +35,13 @@ const CARDS = [
       en: 'PageRank',
       pt: 'PageRank'
     },
+    algorithm: {
+      en: '',
+      pt: 'PageRank é o algoritmo de análise de links usado pelo Google para classificar as páginas nos resultados de pesquisa. É uma forma de medir a relevância de um website contando a quantidade e a qualidade dos links apontados para ele.'
+    },
     message: {
       en: 'Inner knowledge and intuition. A way into the divine subconscious mind. Not all silence bears secrets.',
-      pt:'Conhecimento interno e intuição. Um caminho para o subconsciente divino. Nem todo silêncio contém segredos.'
+      pt:'No plano humano, esse algoritmo fala do conhecimento interno e intuição. Um caminho para a mente subconsciente divina. Nem todo silêncio contém segredos.'
     }
   },
   {
@@ -37,6 +49,10 @@ const CARDS = [
     name: {
       en: 'Reaction-Diffusion',
       pt: 'Reação-Difusão'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'You can have both nature AND nurture in beautiful abundance. Just don\'t waste your time looking for something that isn\'t there. Movement doesn\'t equal progress.',
@@ -49,6 +65,10 @@ const CARDS = [
       en: 'Alpha–Beta Pruning',
       pt: 'Poda Alfa-Beta'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Consider all your possibilities before clearing up space for new beginnings. Be aware of rules, patterns and time restrictions related to your ventures.',
       pt:'Considere todas as suas possibilidades antes de investir em recomeços. Esteja ciente das regras, padrões e restrições relacionadas aos seus empreendimentos.'
@@ -59,6 +79,10 @@ const CARDS = [
     name: {
       en: 'Quicksort',
       pt: 'Quicksort'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Material preoccupation with law and order. Don\'t inflate your ego with righteousness by ignoring social and community matters.',
@@ -71,6 +95,10 @@ const CARDS = [
       en: 'Greatest Common Divisor',
       pt: 'Máximo Divisor Comum'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Choice doesn\'t have to mean abdication. Synthesize. Figure out a way to integrate both sides, or keep one for later.',
       pt:'Uma escolha não significa abdicação. Sintetize. Descubra uma maneira de integrar os dois lados ou guarde um para depois.'
@@ -81,6 +109,10 @@ const CARDS = [
     name: {
       en: 'Maze Search',
       pt: 'Travessia de Grafos e Labirintos'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'One way to weather the storm is to step on the accelerator. Many decisions and actions are reversible. Don\'t be afraid of making mistakes and backtracking.',
@@ -93,6 +125,10 @@ const CARDS = [
       en: 'Splay Trees',
       pt: 'Árvore Splay'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Action, reaction, cause and effect. There is a difference between equity and equality. There are many layers to be unpacked and balanced.',
       pt:'Ação e reação, causa e efeito. Existe uma diferença entre equidade e igualdade. Existem muitas camadas a serem entendidas e equilibradas.'
@@ -103,6 +139,10 @@ const CARDS = [
     name: {
       en: 'SHA3-512',
       pt: 'SHA3-512'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Some answers come from within. Being alone is not the same as being lonely. It is what it is, but what is it? There might only be room for one. Close the door.',
@@ -115,6 +155,10 @@ const CARDS = [
       en: 'Perlin Noise',
       pt: 'Ruído Perlin'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Change is fundamental. All bad things end, and so do good things. It feels like you\'ve been here before, but have you really?',
       pt:'A mudança é fundamental. Todas as coisas ruins acabam, mas as coisas boas também. Pode parecer que você já esteve aqui antes, mas você realmente esteve?'
@@ -125,6 +169,10 @@ const CARDS = [
     name: {
       en: 'Travelling Salesperson',
       pt: 'Caixeiro-Viajante'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Self-control, temperance and discipline. Nurture over nature. Eventually all roads go the same way. You might not be able to bruteforce your way out.',
@@ -137,6 +185,10 @@ const CARDS = [
       en: 'Hilbert Curves',
       pt: 'Curva de Hilbert'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Turn, turn, turn. Change direction. Learn to listen for new callings . Things are out of your control for now. Breathe. Take the ride. It\'s an opportunity to see things from a different perspective.',
       pt:'Vira, vira, vira. Mude a direção. Aprenda a ouvir novos chamados. As coisas estão fora de seu controle por enquanto. Respire. É uma oportunidade de ver as coisas de uma perspectiva diferente.'
@@ -148,9 +200,13 @@ const CARDS = [
       en: 'Mark & Sweep',
       pt: 'Coletor Mark & Sweep'
     },
+    algorithm: {
+      en: '',
+      pt: 'O algoritmo Mark & Sweep é usado para fazer gerenciamento automático de memória. É a parte de um programa responsável por limpar e liberar a memória ocupada por código que não está mais sendo usado.'
+    },
     message: {
       en: 'Everything being pruned away is recycled in the name of fertility. Cut the cords that link you to the past and head into the harvest. But, if you plant ice you\'re gonna harvest wind.',
-      pt:'Tudo o que está sendo podado é reciclado em nome da fertilidade. Corte as amarras que te ligam ao passado e desfrute da abundância da colheita. Mas, quem planta gelo, colhe vento.'
+      pt:'Esta carta representa novos começos. Tudo que é podado é reciclado em nome da fertilidade. Corte as amarras que te ligam ao passado e desfrute da abundância da colheita.'
     }
   },
   {
@@ -158,6 +214,10 @@ const CARDS = [
     name: {
       en: 'Diffie-Hellman Keys',
       pt: 'Chaves Diffie–Hellman'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Be prepared: make sure you have all the pieces before starting to solve the puzzle. It might mean waiting for the moment with patience and moderation.',
@@ -170,16 +230,24 @@ const CARDS = [
       en: 'JPEG Compression',
       pt: 'Compressão JPEG'
     },
+    algorithm: {
+      en: '',
+      pt: 'O algoritmo JPEG explora propriedades fisiológicas da visão humana para diminuir o tamanho de arquivos de imagem. Comprime imagens por partes, diminuindo a informação sobre a intensidade das cores e ignorando conteúdo de alta frequência.'
+    },
     message: {
       en: 'Bring out your inner fears and desires. Don\'t be subtle. They aren\'t as numerous or complicated as you think.',
-      pt:'Revele seus medos e desejos íntimos. Não seja sutil. Eles não são tão numerosos ou complicados quanto você pensa.'
+      pt:'Esta carta pede para você revelar seus medos e desejos internos. Não seja sutil, pois não são tão numerosos ou complicados quanto você pensa.'
     }
   },
   {
     number: 0x10,
     name: {
       en: 'Blockchain Proof-of-Work',
-      pt: 'Prova de Trabalho'
+      pt: 'Prova de Trabalho em Blockchain'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Uncontrolled energy. Sudden change. Revolution over evolution. Past, present and future are superimposed all of a sudden. Beware of cognitive dissonance.',
@@ -192,6 +260,10 @@ const CARDS = [
       en: 'CORDIC',
       pt: 'CORDIC'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Channel your abilities and resources to transcend the limitations of earthly and material concerns. True power comes from the core.',
       pt:'Foque suas habilidades e recursos para transcender as limitações e preocupações materiais e terrestres. O verdadeiro poder vem de dentro.'
@@ -203,9 +275,13 @@ const CARDS = [
       en: 'Viterbi Encoding',
       pt: 'Encodificação de Viterbi'
     },
+    algorithm: {
+      en: '',
+      pt: 'O Algoritmo de Viterbi usa análise estatística e de probabilidade para reconstruir mensagens transmitidas em canais ruidosos.'
+    },
     message: {
       en: 'Daily routine is just a set up for your dreams. Trust your subconscious and resensitize yourself to the meaning of hidden states.',
-      pt:'A rotina diária é apenas um prelúdio para seus sonhos. Confie no seu subconsciente e ressensibilize-se aos significados de estados ocultos.'
+      pt:'Esta carta mostra que uma rotina diária pode ser o começo de uma configuração para conquistas maiores. Confie no seu subconsciente e re-sensibilize-se ao significado de estados ocultos.'
     }
   },
   {
@@ -213,6 +289,10 @@ const CARDS = [
     name: {
       en: 'Primality Test',
       pt: 'Teste de Primalidade'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Inner essence. Untraditional power centers. Reflected similarities are seen under a different light. Find the natural centers of resonance.',
@@ -225,6 +305,10 @@ const CARDS = [
       en: 'Convex Hull',
       pt: 'Fecho Convexo'
     },
+    algorithm: {
+      en: '',
+      pt: ''
+    },
     message: {
       en: 'Judiciously gather wisdom from tradition and customs. Be mindful of walls and enclosures. Design your own rituals to strengthen the non-material aspects of your life.',
       pt:'Reúna cuidadosamente as sabedorias da tradição e dos costumes. Esteja atento a paredes e cercas. Desenhe seus próprios rituais para fortalecer os aspectos não materiais de sua vida.'
@@ -235,6 +319,10 @@ const CARDS = [
     name: {
       en: 'PID Controller',
       pt: 'Controlador PID'
+    },
+    algorithm: {
+      en: '',
+      pt: ''
     },
     message: {
       en: 'Looking back and walking forward. Searching for resolution and completeness. You\'ll relax when you realize you\'re in the right place.',

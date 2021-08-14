@@ -1,3 +1,10 @@
+// TODO:
+//   - add images to imgs/
+//   - add image urls to json
+//   - finish card draw logic
+//   - animations/videos on grid spaces
+//   - mobile flex etc
+
 function dayOfYear() {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
@@ -23,15 +30,24 @@ function getId() {
 }
 
 window.onload = (event) => {
-  const mcon = document.getElementById('my-app');
-  const mstart = document.getElementById('my-start-button');
+  const mApp = document.getElementById('my-app');
+  const mStartButton = document.getElementById('my-start-button');
+  const mAppOverlay = document.getElementById('my-app-overlay');
+  const mTextOverlay = document.getElementById('my-text-overlay');
+
   const mDailyRandom = dailyRandom(getId() + dayOfYear());
-  
-  console.log(CARDS[Math.floor(CARDS.length * mDailyRandom)]);
+  const mCard = CARDS[Math.floor(CARDS.length * mDailyRandom)];
 
-  mcon.style.backgroundColor = 'bisque';
+  console.log(mCard);
 
-  mstart.addEventListener('click', (event) => {
-    mcon.style.backgroundColor = (mcon.style.backgroundColor === 'bisque') ? 'coral' : 'bisque';
+  mStartButton.addEventListener('click', (event) => {
+    setTimeout(() => mStartButton.style.opacity = 0, 0);
+    setTimeout(() => mStartButton.style.zIndex = -100, 250);
+    setTimeout(() => mAppOverlay.style.opacity = 1, 300);
+    // change card url
+    setTimeout(() => mAppOverlay.style.opacity = 0, 670);
+    setTimeout(() => mTextOverlay.style.opacity = 1, 1350);
+    // set text
+    // fade text in
   });
 };

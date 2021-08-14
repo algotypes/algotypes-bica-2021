@@ -50,11 +50,15 @@ html, body {
 }
 
 .image.app {
-  background-image: none;
+  background-image: url(https://www.taroteca-studio.com/userdata/gfx/549b299e5fd490d37ec94a0e3bd1aa37.jpg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.image.dynamic {
+  position: relative;
 }
 
 .button.start {
@@ -66,4 +70,23 @@ html, body {
   border-radius: 6px;
   user-select: none;
   cursor: pointer;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity .333s linear;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#my-app-overlay {
+  opacity: .6
 }

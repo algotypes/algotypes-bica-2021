@@ -2,21 +2,24 @@
 <html>
   <head>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
-    <div class="content" style="width: 100vw;
-                                min-height: 100vh;">
+    <div class="content">
+
       <div class="row">
         <div class="image"></div>
         <div class="image i00"></div>
         <div class="image i01"></div>
       </div>
 
-      <div class="row">
+      <div class="row app">
         <div class="image"></div>
-        <div class="image app" id="my-app"></div>
-        <div class="image "></div>
+        <div class="image app" id="my-app">
+          <div class="button start" id="my-start-button">Tirar uma carta</div>
+        </div>
+        <div class="image" id="my-text"></div>
       </div>
 
       <div class="row">
@@ -26,6 +29,5 @@
       </div>
 
     </div>
-
   </body>
 </html>

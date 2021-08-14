@@ -50,11 +50,13 @@ html, body {
 }
 
 .image.app {
-  background-image: url(https://www.taroteca-studio.com/userdata/gfx/549b299e5fd490d37ec94a0e3bd1aa37.jpg);
+  background-image: url(imgs/cards/0xXX.png);
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: none;
 }
 
 .image.dynamic {
@@ -72,14 +74,14 @@ html, body {
   cursor: pointer;
   z-index: 1;
   opacity: 1;
-  transition: opacity .2s linear;
+  transition: opacity .25s linear;
 }
 
 .overlay {
   position: absolute;
   background-color: #fff;
   opacity: 0;
-  transition: opacity .333s linear;
+  transition: opacity .5s linear;
   width: 100%;
   height: 100%;
   top: 0;
@@ -88,5 +90,5 @@ html, body {
 }
 
 #my-app-overlay {
-  opacity: .6
+  opacity: .333
 }

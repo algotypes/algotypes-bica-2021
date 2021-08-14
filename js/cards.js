@@ -223,7 +223,7 @@ const CARDS = [
     number: 0x14,
     name: {
       en: 'Convex Hull',
-      pt: 'Geometria Convexa'
+      pt: 'Fecho Convexo'
     },
     message: {
       en: 'Judiciously gather wisdom from tradition and customs. Be mindful of walls and enclosures. Design your own rituals to strengthen the non-material aspects of your life.',

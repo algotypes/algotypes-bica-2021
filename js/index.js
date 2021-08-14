@@ -1,7 +1,5 @@
 // TODO:
-//   - add images to imgs/
-//   - add image urls to json
-//   - finish card draw logic
+//   - finish draw card logic + animation
 //   - animations/videos on grid spaces
 //   - mobile flex etc
 
@@ -37,15 +35,14 @@ window.onload = (event) => {
 
   const mDailyRandom = dailyRandom(getId() + dayOfYear());
   const mCard = CARDS[Math.floor(CARDS.length * mDailyRandom)];
-
-  console.log(mCard);
+  const mCardImageUrl = `imgs/cards/0x${mCard.number.toString(16)}.png`;
 
   mStartButton.addEventListener('click', (event) => {
     setTimeout(() => mStartButton.style.opacity = 0, 0);
-    setTimeout(() => mStartButton.style.zIndex = -100, 250);
-    setTimeout(() => mAppOverlay.style.opacity = 1, 300);
-    // change card url
-    setTimeout(() => mAppOverlay.style.opacity = 0, 670);
+    setTimeout(() => mStartButton.style.zIndex = -100, 270);
+    setTimeout(() => mAppOverlay.style.opacity = 1, 400);
+    setTimeout(() => mApp.style.backgroundImage = `url(${mCardImageUrl})`, 900);
+    setTimeout(() => mAppOverlay.style.opacity = 0, 910);
     setTimeout(() => mTextOverlay.style.opacity = 1, 1350);
     // set text
     // fade text in

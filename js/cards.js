@@ -142,7 +142,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'Esse algoritmo é muito utilizado em aplicações de segurança e criptografia, e em sistemas de assinaturas digitais, armazenamento de senhas e autenticação. É um exemplo de um algoritmo de "resumo": algoritmos que são capazes de transformar mensagens de tamanho arbitrário em resumos de tamanho fixo através de uma transformação de mão única. Ou seja, é praticamente impossível recuperar a mensagem original a partir do seu resumo.'
     },
     message: {
       en: 'Some answers come from within. Being alone is not the same as being lonely. It is what it is, but what is it? There might only be room for one. Close the door.',
@@ -157,7 +157,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'O Ruído Perlin é uma técnica usada para produzir texturas de aparência natural em gráficos gerados por computador. O algoritmo permite a representação da complexidade dos fenômenos naturais em efeitos visuais. É frequentemente usado para criar elementos visuais como fogo, fumaça e nuvens, imitando a aparência aleatória e natural de elementos e texturas.'
     },
     message: {
       en: 'Change is fundamental. All bad things end, and so do good things. It feels like you\'ve been here before, but have you really?',
@@ -172,7 +172,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'O Caixeiro Viajante é um problema de otimização computacional que tenta determinar a menor rota para percorrer uma série de cidades. Algoritmos que calculam a solução para esse tipo de problema levam um tempo indeterminado para encontrar a melhor solução ou encontram uma boa solução dentro de um período de tempo fixo. Não existe um método eficiente que sempre encontre a melhor solução possível.'
     },
     message: {
       en: 'Self-control, temperance and discipline. Nurture over nature. Eventually all roads go the same way. You might not be able to bruteforce your way out.',
@@ -187,7 +187,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'A Curva de Hilbert é um algoritmo usado para transformar um espaço multidimensional em um espaço unidimensional. Essas curvas são como um fio que passa por todos os pontos de um espaço multidimensional, impondo uma ordem linear a esse espaço. A Curva de Hilbert é importante porque é capaz de preservar certos tipos de localidade: pontos que estão próximos no espaço multidimensional permanecerão próximos no espaço unidimensional.'
     },
     message: {
       en: 'Turn, turn, turn. Change direction. Learn to listen for new callings . Things are out of your control for now. Breathe. Take the ride. It\'s an opportunity to see things from a different perspective.',
@@ -217,7 +217,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'A criptografia assimétrica é baseada na ideia de que a senha usada para criptografar dados pode ser pública, enquanto a senha usada para descriptografar deve permanecer privada. Dados criptografados com uma chave pública só podem ser lidos usando sua chave privada. A troca de chaves Diffie-Hellman é um método seguro de criar e trocar chaves criptográficas em espaços públicos como a internet.'
     },
     message: {
       en: 'Be prepared: make sure you have all the pieces before starting to solve the puzzle. It might mean waiting for the moment with patience and moderation.',
@@ -247,7 +247,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'Uma Prova de Trabalho é um número difícil de calcular, mas cuja validade é fácil de verificar. Muitas vezes, é gerado por processos aleatórios com baixa probabilidade de sucesso, de modo que muitas tentativas são necessárias antes que um número válido seja gerado. Para moedas digitais, esses cálculos são executados toda vez que um conjunto de transações é gravado permanentemente no blockchain.'
     },
     message: {
       en: 'Uncontrolled energy. Sudden change. Revolution over evolution. Past, present and future are superimposed all of a sudden. Beware of cognitive dissonance.',
@@ -262,7 +262,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'Computadores só conseguem representar com precisão uma pequena fração de todos os números existentes. São bons em lidar com números inteiros, mas todos os outros tipos de números (frações e números racionais) são representados por aproximações numéricas. CORDIC é um algoritmo simples e eficiente que trabalha dentro dessas limitações para calcular funções trigonométricas, raízes quadradas, logaritmos e outras funções matemáticas que dependem de frações e números irracionais.'
     },
     message: {
       en: 'Channel your abilities and resources to transcend the limitations of earthly and material concerns. True power comes from the core.',
@@ -277,7 +277,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'O Algoritmo de Viterbi usa análise estatística e de probabilidade para reconstruir mensagens transmitidas em canais ruidosos.'
+      pt: 'Comumente usado em programas de reconhecimento de fala, síntese de voz e linguística computacional, o Algoritmo de Viterbi usa análise estatística e de probabilidade para reconstruir mensagens transmitidas em canais ruidosos.'
     },
     message: {
       en: 'Daily routine is just a set up for your dreams. Trust your subconscious and resensitize yourself to the meaning of hidden states.',
@@ -292,7 +292,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'Um número primo é um número que não é divisível por qualquer outro número além de si mesmo. Um teste de primalidade é um algoritmo que é capaz de calcular se um número é primo ou se pode ser representado pelo produto de dois números naturais menores. Os algoritmos de teste de primalidade são capazes de acelerar esse cálculo usando o fato de que todos os primos maiores que 3 tem a forma 6k + 1 ou 6k - 1.'
     },
     message: {
       en: 'Inner essence. Untraditional power centers. Reflected similarities are seen under a different light. Find the natural centers of resonance.',
@@ -307,11 +307,11 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'O fecho de um objeto é o menor polígono convexo que pode circunscrever completamente o objeto. Esse tipo de polígono é extremamente útil na robótica e em sistemas de navegação autônoma, porque pode ser usado para evitar colisões, uma vez que acompanhar um fecho convexo é muito mais simples do que acompanhar a forma exata de um objeto.'
     },
     message: {
       en: 'Judiciously gather wisdom from tradition and customs. Be mindful of walls and enclosures. Design your own rituals to strengthen the non-material aspects of your life.',
-      pt:'Esse algoritmo simboliza uma combinação cuidadosa de sabedorias tradicionais e costumes. Esteja atento a paredes e cercas. Desenhe seus próprios rituais para fortalecer os aspectos não materiais de sua vida.'
+      pt:'Esse algoritmo simboliza a mistura de sabedorias tradicionais com conhecimentos contemporâneos. Esteja atento a paredes e cercas. Invente seus próprios rituais para fortalecer os aspectos não materiais de sua vida.'
     }
   },
   {
@@ -322,7 +322,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: ''
+      pt: 'Um Controlador PID é um mecanismo de controle que emprega feedback para corrigir automaticamente ações de um sistema autônomo. É usado em sistemas industriais que requerem monitoramento, controle e correção contínuos. O algoritmo de um Controlador PID calcula continuamente o seu valor de erro, a distância entre seu estado atual e o desejado, e aplica uma correção responsiva com base nas características do histórico desse erro.'
     },
     message: {
       en: 'Looking back and walking forward. Searching for resolution and completeness. You\'ll relax when you realize you\'re in the right place.',

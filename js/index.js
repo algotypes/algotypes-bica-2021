@@ -1,6 +1,8 @@
 // TODO:
 //   - finish draw card logic + animation
 //   - add texts
+//   - 3 cards to choose from
+//   - pop up for piramides
 //   - animations/videos on grid spaces
 //     - one spinning pyramid
 //     - one video
@@ -89,9 +91,10 @@ window.onload = (event) => {
     setTimeout(() => mIntroOverlay.style.opacity = 0, INTRO_OVERLAY_FADEOUT);
 
     // fade message text
+    const fullMessage = `${mCard.message.pt}<p>Volte amanhã para uma nova leitura.</p>`
     setTimeout(() => mMessageOverlay.style.opacity = 1, MESSAGE_OVERLAY_FADEIN);
     setTimeout(() => mMessage.style.backgroundImage = 'none', MESSAGE_REMOVE_IMAGE);
-    setTimeout(() => mMessageText.innerHTML = mCard.message.pt, MESSAGE_REMOVE_IMAGE);
+    setTimeout(() => mMessageText.innerHTML = fullMessage, MESSAGE_REMOVE_IMAGE);
     setTimeout(() => mMessageOverlay.style.opacity = 0, MESSAGE_OVERLAY_FADEOUT);
   });
 };

@@ -6,37 +6,53 @@
     <script src="js/index.js"></script>
   </head>
   <body>
-    <div class="content">
+    <div class="board">
+      <div class="cross">
 
-      <div class="row">
-        <div class="image"></div>
-        <div class="image i00"></div>
+        <div class="row">
+          <div class="image"></div>
+          <div class="image wide">
+            <div class="video-container">
+              <video playsinline autoplay muted loop class="video" height="360">
+                <source src="./imgs/shuffle.webm" type="video/webm">
+                <source src="./imgs/shuffle.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="image"></div>
+        </div>
+
+        <div class="row app">
+          <div class="image dynamic" id="card-left">
+            <div class="text"></div>
+            <div class="overlay"></div>
+          </div>
+
+          <div class="image dynamic" id="card-center">
+            <div class="text"></div>
+            <div class="overlay"></div>
+          </div>
+
+          <div class="image dynamic" id="card-right">
+            <div class="text"></div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="image"></div>
+          <div class="image i04"></div>
+          <div class="image"></div>
+        </div>
+
+      </div>
+
+      <div class="column">
         <div class="image i01"></div>
-      </div>
-
-      <div class="row app">
-        <div class="image dynamic" id="card-left">
-          <div class="text"></div>
-          <div class="overlay"></div>
-        </div>
-
-        <div class="image dynamic" id="card-center">
-          <div class="text"></div>
-          <div class="overlay"></div>
-        </div>
-
-        <div class="image dynamic" id="card-right">
-          <div class="text"></div>
-          <div class="overlay"></div>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="image i02"></div>
-        <div class="image"></div>
+        <div class="image i00"></div>
         <div class="image i03"></div>
       </div>
-
     </div>
   </body>
 </html>

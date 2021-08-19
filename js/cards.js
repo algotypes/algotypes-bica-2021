@@ -232,7 +232,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'O algoritmo JPEG explora propriedades fisiológicas da visão humana para diminuir o tamanho de arquivos de imagem. Comprime imagens por partes, diminuindo a informação sobre a intensidade das cores e ignorando conteúdo de alta frequência.'
+      pt: 'O algoritmo de compressão JPEG explora propriedades fisiológicas da visão humana para diminuir o tamanho de arquivos de imagem. Comprime imagens por partes, diminuindo a informação sobre a intensidade das cores e ignorando conteúdo de alta frequência.'
     },
     message: {
       en: 'Bring out your inner fears and desires. Don\'t be subtle. They aren\'t as numerous or complicated as you think.',

@@ -1,10 +1,25 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgba(255,255,255);
 }
 
-.content {
+.board {
   width: 100%;
+  height: 1280px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cross {
+  width: 75%;
+  height: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  width: 25%;
   height: 1280px;
   display: flex;
   flex-direction: column;
@@ -27,12 +42,38 @@ html, body {
 
 .image {
   width: 33%;
-  border: 1px #000 solid;
   margin: 8px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x15_00.jpg);
+  background-image: none;
+  background-color: rgba(255,255,255,0);
+  box-sizing: border-box;
+}
+
+.image.wide {
+  width: 50%;
+}
+
+.column > .image {
+  width: 100%;
+  height: 25%;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  height: 100%;
 }
 
 .image.i00 {
@@ -49,6 +90,10 @@ html, body {
 
 .image.i03 {
   background-image: url(https://outras.ml/assets/algotypes/algotypes_visualizer_03.jpg);
+}
+
+.image.i04 {
+  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x15_00.jpg);
 }
 
 .image.dynamic {

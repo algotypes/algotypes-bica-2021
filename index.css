@@ -58,6 +58,8 @@ html, body {
 .column > .image {
   width: 100%;
   height: 25%;
+  background-size: contain;
+  cursor: pointer;
 }
 
 .video-container {
@@ -77,23 +79,19 @@ html, body {
 }
 
 .image.i00 {
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x14_00.jpg);
+  background-image: url(imgs/pyramids/0x0E.jpg);
 }
 
 .image.i01 {
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x0E_01.jpg);
+  background-image: url(imgs/pyramids/0x01.jpg);
 }
 
 .image.i02 {
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x01_01.jpg);
+  background-image: url(imgs/pyramids/0x14.jpg);
 }
 
 .image.i03 {
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_visualizer_03.jpg);
-}
-
-.image.i04 {
-  background-image: url(https://outras.ml/assets/algotypes/algotypes_0x15_00.jpg);
+  background-image: url(imgs/pyramids/0x16.jpg);
 }
 
 .image.dynamic {

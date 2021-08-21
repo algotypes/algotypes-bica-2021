@@ -1,9 +1,6 @@
 // TODO:
-//   - add text style
-//   - pop up for piramides
-//   - animations/videos on grid spaces
-//     - one spinning pyramid
-//     - one video
+//   - adjust video brightness
+//   - adjust text style
 //   - mobile flex etc
 
 function dayOfYear() {
@@ -107,6 +104,34 @@ function onCardClick(event) {
   setTimeout(() => mMessageOverlay.style.opacity = 0, MESSAGE_OVERLAY_FADEOUT);
 }
 
+function populatePyramids() {
+  const pyramidTop = document.getElementById('my-pyramid-00');
+  const pyramidMid = document.getElementById('my-pyramid-01');
+  const pyramidBot = document.getElementById('my-pyramid-02');
+  const pyramidViz = document.getElementById('my-pyramid-03');
+
+  const mCardIndex = parseInt(LSTORAGE.getItem('algotypesNextCardIndex'));
+  const mDailyCard = CARDS[mCardIndex];
+  const mCardHex = `0${mDailyCard.number.toString(16).toUpperCase()}`.slice(-2);
+
+  const mRandomCard = CARDS[Math.floor(Math.random() * CARDS.length)];
+  const mRandomCardHex = `0${mRandomCard.number.toString(16).toUpperCase()}`.slice(-2);
+
+  pyramidTop.style.backgroundImage = `url(imgs/pyramids/0x${mCardHex}_A.jpg)`;
+  pyramidMid.style.backgroundImage = `url(imgs/pyramids/0x${mRandomCardHex}_A.jpg)`;
+  pyramidBot.style.backgroundImage = `url(imgs/pyramids/0x${mCardHex}_B.jpg)`;
+  pyramidViz.style.backgroundImage = `url(imgs/pyramids/0x16.jpg)`;
+
+  pyramidTop.setAttribute('href', mDailyCard.link);
+  pyramidMid.setAttribute('href', mRandomCard.link);
+  pyramidBot.setAttribute('href', mDailyCard.link);
+
+  setTimeout(() => pyramidTop.style.opacity = 1, 0);
+  setTimeout(() => pyramidMid.style.opacity = 1, 1000);
+  setTimeout(() => pyramidBot.style.opacity = 1, 2000);
+  setTimeout(() => pyramidViz.style.opacity = 1, 3000);
+}
+
 window.onload = (event) => {
   const allCards = Array.from(document.getElementsByClassName('dynamic'));
   const allOverlay = Array.from(document.getElementsByClassName('overlay'));
@@ -126,4 +151,6 @@ window.onload = (event) => {
   } else {
     allCards.forEach(c => c.classList.add('active'));
   }
+
+  populatePyramids();
 };

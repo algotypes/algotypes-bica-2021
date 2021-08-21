@@ -1,6 +1,7 @@
 const CARDS = [
   {
     number: 0x00,
+    link: 'https://outras.ml/algotypes/prng/',
     name: {
       en: 'Pseudo-Random Number Generator',
       pt: 'Gerador de Números Pseudoaleatórios'
@@ -16,6 +17,7 @@ const CARDS = [
   },
   {
     number: 0x01,
+    link: 'https://outras.ml/algotypes/fft/',
     name: {
       en: 'Fast Fourier Transform',
       pt: 'Transformação Rápida de Fourier'
@@ -31,6 +33,7 @@ const CARDS = [
   },
   {
     number: 0x02,
+    link: 'https://outras.ml/algotypes/eigenvalue/',
     name: {
       en: 'PageRank',
       pt: 'PageRank'
@@ -46,6 +49,7 @@ const CARDS = [
   },
   {
     number: 0x03,
+    link: 'https://outras.ml/algotypes/reaction-diffusion/',
     name: {
       en: 'Reaction-Diffusion',
       pt: 'Reação-Difusão'
@@ -61,6 +65,7 @@ const CARDS = [
   },
   {
     number: 0x04,
+    link: 'https://outras.ml/algotypes/pruning/',
     name: {
       en: 'Alpha–Beta Pruning',
       pt: 'Poda Alfa-Beta'
@@ -76,6 +81,7 @@ const CARDS = [
   },
   {
     number: 0x05,
+    link: 'https://outras.ml/algotypes/quicksort/',
     name: {
       en: 'Quicksort',
       pt: 'Quicksort'
@@ -91,6 +97,7 @@ const CARDS = [
   },
   {
     number: 0x06,
+    link: 'https://outras.ml/algotypes/gcd/',
     name: {
       en: 'Greatest Common Divisor',
       pt: 'Máximo Divisor Comum'
@@ -106,6 +113,7 @@ const CARDS = [
   },
   {
     number: 0x07,
+    link: 'https://outras.ml/algotypes/breath-depth/',
     name: {
       en: 'Maze Search',
       pt: 'Travessia de Grafos e Labirintos'
@@ -121,6 +129,7 @@ const CARDS = [
   },
   {
     number: 0x08,
+    link: 'https://outras.ml/algotypes/splay/',
     name: {
       en: 'Splay Trees',
       pt: 'Árvore Splay'
@@ -136,6 +145,7 @@ const CARDS = [
   },
   {
     number: 0x09,
+    link: 'https://outras.ml/algotypes/sha3-512/',
     name: {
       en: 'SHA3-512',
       pt: 'SHA3-512'
@@ -151,6 +161,7 @@ const CARDS = [
   },
   {
     number: 0x0A,
+    link: 'https://outras.ml/algotypes/noise/',
     name: {
       en: 'Perlin Noise',
       pt: 'Ruído Perlin'
@@ -166,6 +177,7 @@ const CARDS = [
   },
   {
     number: 0x0B,
+    link: 'https://outras.ml/algotypes/annealing/',
     name: {
       en: 'Travelling Salesperson',
       pt: 'Caixeiro-Viajante'
@@ -181,6 +193,7 @@ const CARDS = [
   },
   {
     number: 0x0C,
+    link: 'https://outras.ml/algotypes/curves/',
     name: {
       en: 'Hilbert Curves',
       pt: 'Curva de Hilbert'
@@ -196,6 +209,7 @@ const CARDS = [
   },
   {
     number: 0x0D,
+    link: 'https://outras.ml/algotypes/sweep/',
     name: {
       en: 'Mark & Sweep',
       pt: 'Coletor Mark & Sweep'
@@ -211,6 +225,7 @@ const CARDS = [
   },
   {
     number: 0x0E,
+    link: 'https://outras.ml/algotypes/exchange/',
     name: {
       en: 'Diffie-Hellman Keys',
       pt: 'Chaves Diffie–Hellman'
@@ -226,6 +241,7 @@ const CARDS = [
   },
   {
     number: 0x0F,
+    link: 'https://outras.ml/algotypes/compression/',
     name: {
       en: 'JPEG Compression',
       pt: 'Compressão JPEG'
@@ -241,6 +257,7 @@ const CARDS = [
   },
   {
     number: 0x10,
+    link: 'https://outras.ml/algotypes/proof/',
     name: {
       en: 'Blockchain Proof-of-Work',
       pt: 'Prova de Trabalho em Blockchain'
@@ -256,6 +273,7 @@ const CARDS = [
   },
   {
     number: 0x11,
+    link: 'https://outras.ml/algotypes/cordic/',
     name: {
       en: 'CORDIC',
       pt: 'CORDIC'
@@ -271,6 +289,7 @@ const CARDS = [
   },
   {
     number: 0x12,
+    link: 'https://outras.ml/algotypes/encoding/',
     name: {
       en: 'Viterbi Encoding',
       pt: 'Encodificação de Viterbi'
@@ -286,6 +305,7 @@ const CARDS = [
   },
   {
     number: 0x13,
+    link: 'https://outras.ml/algotypes/primality/',
     name: {
       en: 'Primality Test',
       pt: 'Teste de Primalidade'
@@ -301,6 +321,7 @@ const CARDS = [
   },
   {
     number: 0x14,
+    link: 'https://outras.ml/algotypes/convex-hull/',
     name: {
       en: 'Convex Hull',
       pt: 'Fecho Convexo'
@@ -316,6 +337,7 @@ const CARDS = [
   },
   {
     number: 0x15,
+    link: 'https://outras.ml/algotypes/integrate/',
     name: {
       en: 'PID Controller',
       pt: 'Controlador PID'

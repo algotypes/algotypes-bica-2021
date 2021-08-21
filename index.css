@@ -56,10 +56,12 @@ html, body {
 }
 
 .column > .image {
+  display: block;
   width: 100%;
   height: 25%;
   background-size: contain;
-  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .video-container {
@@ -76,22 +78,6 @@ html, body {
 .video {
   position: absolute;
   height: 100%;
-}
-
-.image.i00 {
-  background-image: url(imgs/pyramids/0x0E.jpg);
-}
-
-.image.i01 {
-  background-image: url(imgs/pyramids/0x01.jpg);
-}
-
-.image.i02 {
-  background-image: url(imgs/pyramids/0x14.jpg);
-}
-
-.image.i03 {
-  background-image: url(imgs/pyramids/0x16.jpg);
 }
 
 .image.dynamic {

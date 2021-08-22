@@ -1,5 +1,4 @@
 // TODO:
-//   - adjust video brightness
 //   - adjust text style
 //   - mobile flex etc
 

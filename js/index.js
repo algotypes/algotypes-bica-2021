@@ -1,5 +1,6 @@
 // TODO:
-//   - adjust text style
+//   - remove empty moments from top video
+//   - adjust text style: add font from cards
 //   - mobile flex etc
 
 function dayOfYear() {
@@ -66,40 +67,43 @@ function onCardClick(event) {
   const mCardIndex = parseInt(LSTORAGE.getItem('algotypesNextCardIndex'));
   const mDailyCard = CARDS[mCardIndex];
   const mCardImageUrl = `imgs/cards/${intToHexString(mDailyCard.number)}.png`;
-  const fullMessage = `${mDailyCard.message.pt}<p>Volte amanhã para uma nova leitura.</p>`;
 
   const mCardId = event.target.parentElement.id;
   const mIntroId = (mCardId === 'card-left') ? 'card-center' : 'card-left';
   const mMessageId = (mCardId === 'card-right') ? 'card-center' : 'card-right';
-  const mCard = document.getElementById(mCardId);
-  const mIntro = document.getElementById(mIntroId);
-  const mMessage = document.getElementById(mMessageId);
+  const mCardDiv = document.getElementById(mCardId);
+  const mIntroDiv = document.getElementById(mIntroId);
+  const mMessageDiv = document.getElementById(mMessageId);
 
-  const mCardText = mCard.querySelector('.text');
-  const mIntroText = mIntro.querySelector('.text');
-  const mMessageText = mMessage.querySelector('.text');
-  const mCardOverlay = mCard.querySelector('.overlay');
-  const mIntroOverlay = mIntro.querySelector('.overlay');
-  const mMessageOverlay = mMessage.querySelector('.overlay');
+  const mCardText = mCardDiv.querySelector('.text');
+  const mIntroText = mIntroDiv.querySelector('.text');
+  const mMessageText = mMessageDiv.querySelector('.text');
+  const mCardOverlay = mCardDiv.querySelector('.overlay');
+  const mIntroOverlay = mIntroDiv.querySelector('.overlay');
+  const mMessageOverlay = mMessageDiv.querySelector('.overlay');
 
   LSTORAGE.setItem('algotypesLastClickedId', mCardId);
   LSTORAGE.setItem('algotypesLastCardIndex', mCardIndex);
 
+  const comeBackTxt = '<br><br><br><br>Volte amanhã para uma nova leitura.';
+  const mMessageTxt = `${mDailyCard.message.pt}${comeBackTxt}`.replace('. ', '.<br><br>');
+  const mIntroTxt = `${mDailyCard.algorithm.pt}`.replaceAll('. ', '.<br><br>');
+
   // fade card
   setTimeout(() => mCardOverlay.style.opacity = 1, CARD_OVERLAY_FADEIN);
-  setTimeout(() => mCard.style.backgroundImage = `url(${mCardImageUrl})`, CARD_SET_IMAGE);
+  setTimeout(() => mCardDiv.style.backgroundImage = `url(${mCardImageUrl})`, CARD_SET_IMAGE);
   setTimeout(() => mCardOverlay.style.opacity = 0, CARD_OVERLAY_FADEOUT);
 
   // fade intro text
   setTimeout(() => mIntroOverlay.style.opacity = 1, INTRO_OVERLAY_FADEIN);
-  setTimeout(() => mIntro.style.backgroundImage = 'none', INTRO_REMOVE_IMAGE);
-  setTimeout(() => mIntroText.innerHTML = mDailyCard.algorithm.pt, INTRO_REMOVE_IMAGE);
+  setTimeout(() => mIntroDiv.style.backgroundImage = 'none', INTRO_REMOVE_IMAGE);
+  setTimeout(() => mIntroText.innerHTML = mIntroTxt, INTRO_REMOVE_IMAGE);
   setTimeout(() => mIntroOverlay.style.opacity = 0, INTRO_OVERLAY_FADEOUT);
 
   // fade message text
   setTimeout(() => mMessageOverlay.style.opacity = 1, MESSAGE_OVERLAY_FADEIN);
-  setTimeout(() => mMessage.style.backgroundImage = 'none', MESSAGE_REMOVE_IMAGE);
-  setTimeout(() => mMessageText.innerHTML = fullMessage, MESSAGE_REMOVE_IMAGE);
+  setTimeout(() => mMessageDiv.style.backgroundImage = 'none', MESSAGE_REMOVE_IMAGE);
+  setTimeout(() => mMessageText.innerHTML = mMessageTxt, MESSAGE_REMOVE_IMAGE);
   setTimeout(() => mMessageOverlay.style.opacity = 0, MESSAGE_OVERLAY_FADEOUT);
 }
 

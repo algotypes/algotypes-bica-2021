@@ -8,7 +8,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'Números aleatórios gerados por computadores não são realmente aleatórios porque computadores são dispositivos determinísticos e previsíveis. O algoritmo usado aqui gera um fluxo de números cuja ordem é difícil de prever, mas cuja distribuição é uniforme, ou seja, todos os números aparecem com a mesma frequência.'
+      pt: 'Sequências de números aleatórios onde todos os números aparecem com a mesma frequência são extremamente importantes para a criptografia. Mas números aleatórios gerados por computadores não são realmente aleatórios porque computadores são dispositivos determinísticos e previsíveis. Os algoritmos usados para gerar números aleatórios tentam superar essa impossibilidade gerando um fluxo de números uniformemente distribuídos cuja ordem é difícil de prever.'
     },
     message: {
       en: 'Beginning of a journey. Every outcome is equally likely. But there is method to your madness.',

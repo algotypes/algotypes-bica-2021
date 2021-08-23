@@ -25,7 +25,24 @@ function intToHexString(i) {
   return `0x${i.toString(16).padStart(2, '0').toUpperCase()}`;
 }
 
-const LSTORAGE = window.localStorage;
+const fakeLS = {}
+fakeLS.setItem = (k, v) => fakeLS[k] = v;
+fakeLS.getItem = (k) => fakeLS[k];
+fakeLS.setItem
+fakeLS.setItem('algotypesId', 2021);
+
+function lsTest() {
+  try {
+    localStorage.setItem('foo', 'foo');
+    localStorage.getItem('foo',);
+    localStorage.removeItem('foo');
+    return true;
+  } catch(e) {
+    return false;
+  }
+}
+
+const LSTORAGE = lsTest() ? window.localStorage : fakeLS;
 const OVERLAY_TRANSITION_DURATION = 1000;
 const READ_PAUSE = 500;
 const BEAT_PAUSE = 10;

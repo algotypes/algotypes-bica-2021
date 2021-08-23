@@ -1,8 +1,3 @@
-// TODO:
-//   - remove empty moments from top video
-//   - adjust text style: add font from cards
-//   - mobile flex etc
-
 function dayOfYear() {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
@@ -57,6 +52,19 @@ function zeroDelays() {
     MESSAGE_OVERLAY_FADEOUT = 0;
 }
 
+function checkText(n = 0) {
+  const mIntroText = document.getElementById('card-left').querySelector('.text');
+  const mMessageText = document.getElementById('card-right').querySelector('.text');
+
+  const mDailyCard = CARDS[n % CARDS.length];
+  const comeBackContent = '<br><br><br><br>Volte amanhã para uma nova leitura.';
+  const mMessageContent = `${mDailyCard.message.pt}${comeBackContent}`.replace('. ', '.<br><br>');
+  const mIntroContent = `${mDailyCard.algorithm.pt}`.replaceAll('. ', '.<br><br>');
+
+  mIntroText.innerHTML = mIntroContent;
+  mMessageText.innerHTML = mMessageContent;
+}
+
 function onCardClick(event) {
   document.getElementById(event.target.parentElement.id).style.opacity = .8;
 
@@ -85,9 +93,9 @@ function onCardClick(event) {
   LSTORAGE.setItem('algotypesLastClickedId', mCardId);
   LSTORAGE.setItem('algotypesLastCardIndex', mCardIndex);
 
-  const comeBackTxt = '<br><br><br><br>Volte amanhã para uma nova leitura.';
-  const mMessageTxt = `${mDailyCard.message.pt}${comeBackTxt}`.replace('. ', '.<br><br>');
-  const mIntroTxt = `${mDailyCard.algorithm.pt}`.replaceAll('. ', '.<br><br>');
+  const comeBackContent = '<br><br><br><br>Volte amanhã para uma nova leitura.';
+  const mMessageContent = `${mDailyCard.message.pt}${comeBackContent}`.replace('. ', '.<br><br>');
+  const mIntroContent = `${mDailyCard.algorithm.pt}`.replaceAll('. ', '.<br><br>');
 
   // fade card
   setTimeout(() => mCardOverlay.style.opacity = 1, CARD_OVERLAY_FADEIN);
@@ -97,13 +105,13 @@ function onCardClick(event) {
   // fade intro text
   setTimeout(() => mIntroOverlay.style.opacity = 1, INTRO_OVERLAY_FADEIN);
   setTimeout(() => mIntroDiv.style.backgroundImage = 'none', INTRO_REMOVE_IMAGE);
-  setTimeout(() => mIntroText.innerHTML = mIntroTxt, INTRO_REMOVE_IMAGE);
+  setTimeout(() => mIntroText.innerHTML = mIntroContent, INTRO_REMOVE_IMAGE);
   setTimeout(() => mIntroOverlay.style.opacity = 0, INTRO_OVERLAY_FADEOUT);
 
   // fade message text
   setTimeout(() => mMessageOverlay.style.opacity = 1, MESSAGE_OVERLAY_FADEIN);
   setTimeout(() => mMessageDiv.style.backgroundImage = 'none', MESSAGE_REMOVE_IMAGE);
-  setTimeout(() => mMessageText.innerHTML = mMessageTxt, MESSAGE_REMOVE_IMAGE);
+  setTimeout(() => mMessageText.innerHTML = mMessageContent, MESSAGE_REMOVE_IMAGE);
   setTimeout(() => mMessageOverlay.style.opacity = 0, MESSAGE_OVERLAY_FADEOUT);
 }
 

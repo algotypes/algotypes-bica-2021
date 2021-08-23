@@ -264,7 +264,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'Uma Prova de Trabalho é um número difícil de calcular, mas cuja validade é fácil de verificar. Muitas vezes, é gerado por processos aleatórios com baixa probabilidade de sucesso, de modo que muitas tentativas são necessárias antes que um número válido seja gerado. Para moedas digitais, esses cálculos são executados toda vez que um conjunto de transações é gravado permanentemente no blockchain.'
+      pt: 'Uma Prova de Trabalho é um processo algorítmico cujo cálculo é difícil de executar, mas cuja validade é fácil de verificar. Muitas vezes, é gerado por processos aleatórios com baixa probabilidade de sucesso, de modo que muitas tentativas são necessárias antes que um número válido seja gerado. Para moedas digitais, esses cálculos são executados toda vez que um conjunto de transações é gravado permanentemente no blockchain.'
     },
     message: {
       en: 'Uncontrolled energy. Sudden change. Revolution over evolution. Past, present and future are superimposed all of a sudden. Beware of cognitive dissonance.',
@@ -312,7 +312,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'Um número primo é um número que não é divisível por qualquer outro número além de si mesmo. Um teste de primalidade é um algoritmo que é capaz de calcular se um número é primo ou se pode ser representado pelo produto de dois números naturais menores. Os algoritmos de teste de primalidade são capazes de acelerar esse cálculo usando o fato de que todos os primos maiores que 3 tem a forma 6k + 1 ou 6k - 1.'
+      pt: 'Um número primo é um número que não é divisível por qualquer outro número além de si mesmo. Um teste de primalidade é um algoritmo que é capaz de calcular se um número é primo ou se pode ser representado pelo produto de dois números naturais menores. Os algoritmos de teste de primalidade são capazes de acelerar esse cálculo usando o fato de que todos os números primos maiores que 3 tem a forma 6k + 1 ou 6k - 1.'
     },
     message: {
       en: 'Inner essence. Untraditional power centers. Reflected similarities are seen under a different light. Find the natural centers of resonance.',

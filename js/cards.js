@@ -24,7 +24,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'A Transformação Rápida de Fourier é um algoritmo usado para navegar entre duas representações da mesma informação: uma que mostra quando certas coisas acontecem e outra que expressa com que frequência.'
+      pt: 'Na matemática, uma análise de Fourier, ou análise harmônica, é uma maneira de expressar qualquer sequência de números através da soma de funções trigonométricas mais simples e periódicas. A Transformação Rápida de Fourier é um algoritmo usado para fazer essa análise e navegar entre duas representações da mesma informação: uma que mostra quando certas coisas acontecem e outra que expressa com que frequência.'
     },
     message: {
       en: 'Transformation between two realms. Creativity as material resource. Bring your own practical knowledge, tools and rituals.',
@@ -296,7 +296,7 @@ const CARDS = [
     },
     algorithm: {
       en: '',
-      pt: 'Comumente usado em programas de reconhecimento de fala, síntese de voz e linguística computacional, o Algoritmo de Viterbi usa análise estatística e de probabilidade para reconstruir mensagens transmitidas em canais ruidosos.'
+      pt: 'Comumente usado em programas de reconhecimento de fala, síntese de voz e linguística computacional, o Algoritmo de Viterbi usa análise estatística e de probabilidade para reconstruir mensagens transmitidas em canais ruidosos. Ou, dado um determinado sinal (gravação de voz) que provavelmente foi corrompido (fundo com ruído), o Algoritmo de Viterbi usa uma lista de possiveis sinais de entrada (todas as palavras em um dicionário) para reconstruir a mensagem original.'
     },
     message: {
       en: 'Daily routine is just a set up for your dreams. Trust your subconscious and resensitize yourself to the meaning of hidden states.',

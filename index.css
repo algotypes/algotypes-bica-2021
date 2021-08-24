@@ -159,11 +159,13 @@ html, body {
     height: 256px;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
   }
 
   .column > .image {
-    width: 25%;
+    width: 33%;
     height: 100%;
+    margin: 0;
   }
 
   .row {
@@ -178,6 +180,10 @@ html, body {
   .image.dynamic {
     width: 45%;
     margin-top: 7px;
+  }
+
+  .image.hide-mobile {
+    display: none;
   }
 
   .text {

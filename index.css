@@ -47,7 +47,6 @@ html, body {
 }
 
 .image {
-  width: 33%;
   margin: 8px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -138,6 +137,14 @@ html, body {
 }
 
 @media only screen and (max-width: 1080px) {
+  .text {
+    padding: 12px 20px;
+    font-size: 12px;
+    line-height: 1.275;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .board {
     width: 100%;
     display: flex;
@@ -159,13 +166,23 @@ html, body {
     height: 100%;
   }
 
+  .row {
+    flex-grow: .5;
+  }
+
   .row.app {
-    flex-grow: 1.33;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .image.dynamic {
+    width: 45%;
+    margin-top: 7px;
   }
 
   .text {
-    padding: 12px 20px;
-    font-size: 13px;
+    padding: 12px 32px;
+    font-size: 7px;
     line-height: 1.275;
   }
 }
